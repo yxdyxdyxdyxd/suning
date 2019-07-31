@@ -1,0 +1,458 @@
+.conter {
+  width: 1192px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.head {
+  background: #ff6326;
+  position: relative;
+}
+
+.head img {
+  display: block;
+  height: 100px;
+}
+
+.head span {
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 56px;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  background: url(../images/index.png) -241px -145px;
+}
+
+.head .activex {
+  background: url(../images/index.png) -241px -160px;
+}
+
+.head .active-img {
+  display: none;
+}
+
+.toorbal {
+  background: #f5f5f5;
+  border-bottom: 1px solid #eee;
+}
+
+.toorbal .toorbal-left {
+  float: left;
+}
+
+.toorbal .toorbal-left .website-nav {
+  position: relative;
+  float: left;
+  margin-left: -1px;
+  width: 65px;
+  padding: 0 10px;
+  height: 35px;
+}
+
+.toorbal .toorbal-left .website-nav span {
+  display: inline-block;
+  cursor: pointer;
+  line-height: 35px;
+  height: 35px;
+  color: #666;
+  font-size: 12px;
+  float: left;
+}
+
+.toorbal .toorbal-left .website-nav em {
+  display: inline-block;
+  font-size: 10px;
+  width: 10px;
+  color: #bbb;
+  margin-left: 3px;
+  vertical-align: middle;
+  float: left;
+  line-height: 35px;
+}
+
+.toorbal .toorbal-left .website-nav .website-nav-list {
+  width: 988px;
+  padding: 20px 0;
+  position: absolute;
+  display: none;
+  top: 35px;
+  border: 1px solid #ddd;
+  background: #fff;
+  left: 0;
+}
+
+.toorbal .toorbal-left .website-nav .website-nav-list dl {
+  float: left;
+  width: 176px;
+  border-right: 1px solid #eee;
+  padding-left: 20px;
+}
+
+.toorbal .toorbal-left .website-nav .website-nav-list dl dt {
+  height: 25px;
+  width: 100%;
+  font-size: 14px;
+  font-family: "Microsoft Yahei";
+  line-height: 17px;
+}
+
+.toorbal .toorbal-left .website-nav .website-nav-list dl dd {
+  line-height: 35px;
+  width: 100%;
+  overflow: hidden;
+  color: #333;
+}
+
+.toorbal .toorbal-left .website-nav .website-nav-list dl dd p {
+  float: left;
+  height: 25px;
+  width: 78px;
+  line-height: 25px;
+  font-size: 12px;
+  color: #333;
+  position: relative;
+}
+
+.toorbal .toorbal-left .website-nav .website-nav-list dl dd p .hot {
+  position: absolute;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background: url(../images/index.png) -345px -213px;
+  left: auto;
+  right: 12px;
+  top: 2px;
+}
+
+.toorbal .toorbal-left .website-nav .website-nav-list em {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #ccc url(../images/index.png) -241px -145px;
+  right: 10px;
+  top: 10px;
+}
+
+.toorbal .toorbal-left .website-nav .busin {
+  width: 162px;
+  padding-top: 5px;
+  left: 0;
+  padding-bottom: 5px;
+  position: absolute;
+  top: 35px;
+  border: 1px solid #ddd;
+  background: #fff;
+  display: none;
+}
+
+.toorbal .toorbal-left .website-nav .busin p {
+  height: 28px;
+  line-height: 28px;
+  padding-left: 10px;
+  width: 71px;
+  float: left;
+  color: #666;
+  font-size: 12px;
+}
+
+.toorbal .toorbal-left .website-nav .service {
+  width: 162px;
+  padding-top: 5px;
+  left: auto;
+  right: 0;
+  padding-bottom: 5px;
+  position: absolute;
+  top: 35px;
+  border: 1px solid #ddd;
+  background: #fff;
+  display: none;
+}
+
+.toorbal .toorbal-left .website-nav .service p {
+  height: 28px;
+  line-height: 28px;
+  padding-left: 10px;
+  width: 71px;
+  float: left;
+  color: #666;
+  font-size: 12px;
+}
+
+.toorbal .toorbal-left .website-nav .address {
+  float: left;
+  width: 12px;
+  height: 15px;
+  margin: 8px 6px 0 6px;
+  background: url(../images/index.png) -387px -183px;
+}
+
+.toorbal .toorbal-right {
+  float: right;
+}
+
+.toorbal .toorbal-right .enter {
+  position: relative;
+  float: left;
+  padding: 0 10px;
+  overflow: hidden;
+  height: 35px;
+}
+
+.toorbal .toorbal-right .enter a {
+  color: #666;
+  line-height: 35px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.toorbal .toorbal-right .enter a:last-child {
+  color: #F60;
+  margin-left: 10px;
+}
+
+.toorbal .toorbal-right .order {
+  position: relative;
+  float: left;
+  margin-left: -1px;
+  height: 35px;
+  margin: 0 10px;
+}
+
+.toorbal .toorbal-right .order span {
+  display: inline-block;
+  cursor: pointer;
+  line-height: 35px;
+  height: 35px;
+  color: #666;
+  font-size: 12px;
+  float: left;
+}
+
+.toorbal .toorbal-right .order em {
+  display: inline-block;
+  font-size: 10px;
+  width: 10px;
+  color: #bbb;
+  margin-left: 3px;
+  vertical-align: middle;
+  float: left;
+  line-height: 35px;
+}
+
+.toorbal .toorbal-right .order .order-box {
+  width: 81px;
+  padding-bottom: 5px;
+  position: absolute;
+  top: 35px;
+  border: 1px solid #ddd;
+  background: #fff;
+  left: 0;
+  display: none;
+}
+
+.toorbal .toorbal-right .order .order-box p {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  width: 71px;
+  color: #666;
+  font-size: 12px;
+}
+
+.toorbal .toorbal-right .order .my-yigou {
+  width: 162px;
+  padding-bottom: 5px;
+  position: absolute;
+  top: 35px;
+  border: 1px solid #ddd;
+  background: #fff;
+  left: 0;
+  display: none;
+}
+
+.toorbal .toorbal-right .order .my-yigou .my-yigou-h {
+  width: 142px;
+  height: 56px;
+  margin: 5px 10px;
+  overflow: hidden;
+}
+
+.toorbal .toorbal-right .order .my-yigou .my-yigou-h img {
+  width: 54px;
+  height: 54px;
+  float: left;
+}
+
+.toorbal .toorbal-right .order .my-yigou .my-yigou-h span {
+  float: left;
+  width: 66px;
+  height: 56px;
+  line-height: 56px;
+  padding-left: 20px;
+}
+
+.toorbal .toorbal-right .order .my-yigou p {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  width: 71px;
+  color: #666;
+  font-size: 12px;
+  float: left;
+}
+
+.toorbal .toorbal-right .order i {
+  float: left;
+  margin: 0 7px 0 0;
+  font-size: 14px;
+  width: 16px;
+  line-height: 35px;
+  color: #F60;
+}
+
+.toorbal .toorbal-right .order .car {
+  color: #F60;
+}
+
+.toorbal .toorbal-right .order .qrcode {
+  right: 0;
+  left: auto;
+  width: 540px;
+  height: 220px;
+  overflow: hidden;
+  position: absolute;
+  top: 35px;
+  border: 1px solid #ddd;
+  background: #fff;
+  display: none;
+}
+
+.toorbal .toorbal-right .order .qrcode ul {
+  width: 540px;
+}
+
+.toorbal .toorbal-right .order .qrcode ul li {
+  float: left;
+  width: 180px;
+  margin: 17px 0 0;
+}
+
+.toorbal .toorbal-right .order .qrcode ul li img {
+  display: block;
+  width: 147px;
+  height: 147px;
+  margin: 0 auto 10px;
+}
+
+.toorbal .toorbal-right .order .qrcode ul li p {
+  width: 180px;
+  height: 14px;
+  line-height: 14px;
+  overflow: hidden;
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+}
+
+.index-header {
+  height: 110px;
+}
+
+.index-header .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.index-header .logo img {
+  width: 190px;
+  height: 90px;
+}
+
+.index-header .logo-gif {
+  position: absolute;
+  left: 190px;
+  top: 0;
+}
+
+.index-header .index-search {
+  position: absolute;
+  height: 100px;
+  width: 600px;
+  top: 0;
+  left: 300px;
+}
+
+.index-header .index-search .right-search {
+  width: 540px;
+  margin: 30px 0 0 0;
+  position: relative;
+  float: right;
+}
+
+.index-header .index-search .right-search .in-enter {
+  width: 350px;
+  padding: 9px 10px 9px 0;
+  height: 18px;
+  line-height: 18px;
+  margin-top: 0;
+  border: none;
+  background: #FFF;
+  border: 2px solid #FA0;
+  border-right: none;
+  float: left;
+  padding-left: 30px;
+}
+
+.index-header .index-search .right-search .btn-search {
+  width: 120px;
+  background: #F90;
+  font-size: 18px;
+  height: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-indent: 2px;
+  color: #FFF;
+  border: 0;
+  cursor: pointer;
+  float: left;
+}
+
+.index-header .index-search i {
+  display: block;
+  position: absolute;
+  top: 31px;
+  left: 62px;
+  width: 25px;
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.index-header .index-search .index-foot {
+  float: left;
+  width: 100%;
+  height: 18px;
+  margin-top: 5px;
+  color: #999;
+}
+
+.index-header .index-search .index-foot a {
+  float: left;
+  white-space: nowrap;
+  font-size: 12px;
+  margin: 3px 0 3px -11px;
+  padding: 0 20px 0 10px;
+  border-left: 1px solid #ddd;
+  height: 12px;
+  line-height: 12px;
+  color: #999;
+}
+
+.index-header .index-search .index-foot a:first-child {
+  border-left: none;
+}
