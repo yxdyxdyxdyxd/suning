@@ -41,6 +41,8 @@
     .toorbal-left {
         float: left;
 
+
+
         .website-nav {
             position: relative;
             float: left;
@@ -71,6 +73,8 @@
             }
 
 
+
+
             .website-nav-list {
                 width: 988px;
                 padding: 20px 0;
@@ -80,6 +84,7 @@
                 border: 1px solid #ddd;
                 background: #fff;
                 left: 0;
+
 
                 dl {
                     float: left;
@@ -124,6 +129,10 @@
                     }
 
 
+                }
+
+                dl:last-child {
+                    border-right: none;
                 }
 
                 em {
@@ -193,18 +202,36 @@
                 background: url(../images/index.png) -387px -183px;
 
             }
+
+        }
+
+        .website-nav-active {
+
+            background: #fff;
+
+            .website-nav-list {
+                display: block;
+            }
+
+            em {
+
+                transition: transform .2s ease-in;
+                transform: rotate(-180deg);
+            }
+
         }
     }
 
     .toorbal-right {
         float: right;
 
-        .enter {
+        .order {
             position: relative;
             float: left;
-            padding: 0 10px;
-            overflow: hidden;
+            margin-left: -1px;
             height: 35px;
+
+            padding: 0 10px;
 
             a {
                 color: #666;
@@ -217,14 +244,6 @@
                 color: #F60;
                 margin-left: 10px
             }
-        }
-
-        .order {
-            position: relative;
-            float: left;
-            margin-left: -1px;
-            height: 35px;
-            margin: 0 10px;
 
             span {
                 display: inline-block;
@@ -361,6 +380,25 @@
                         }
                     }
                 }
+            }
+        }
+
+        .order-active {
+            background: #fff;
+
+
+            em {
+
+                transition: transform .2s ease-in;
+                transform: rotate(-180deg);
+            }
+
+            span {
+                color: #f60;
+            }
+
+            .order-box {
+                display: block;
             }
         }
     }
