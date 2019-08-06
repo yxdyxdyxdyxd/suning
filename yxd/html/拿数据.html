@@ -25,7 +25,61 @@
 
         })
         console.log(obj)
+
+
+
+        var obj = [];
+        $(".con-list-cur").find(".gbPrice>em").each((i, ele) => {
+            obj.push($(ele).html())
+
+        })
+        console.log(obj)
+
+        var obj = [];
+        $(".jx-wrapper").eq(0).find(".slogon").each((i, ele) => {
+            obj.push($(ele).html())
+
+        })
+        console.log(obj)
+
+        var obj = [];
+        $(".com-floor").find(".brand-logo").find(".lazy-loading").each((i, ele) => {
+            obj.push($(ele)[0].src)
+        })
+        console.log(obj)
+
+
+        var obj = [];
+        $(".com-floor").find(".content").find(".img-list").find(".img-desc").each((i, ele) => {
+            obj.push($(ele).html())
+        })
+        console.log(obj)
+
+        var obj = [];
+        $(".com-floor").find(".bottom-list").find("li").each((i, ele) => {
+            var o = {}
+            o.title = $(ele).find(".img-name").html();
+            o.text = $(ele).find(".img-desc").html();
+            o.src = $(ele).find(".lazy-loading")[0].src;
+            obj.push(o)
+        })
+        console.log(obj)
+
+        var obj = [];
+        $(".rec-content").find("li").each((i, ele) => {
+            var o = {};
+            o.src = $(ele).find(".lazy-loading")[0].src;
+            o.text = $(ele).find(".title").html();
+            o.price = $(ele).find(".price").html();
+            o.icon = $(ele).find(".cxIcon").html();
+            obj.push(o)
+        })
+        console.log(obj)
     </script>
 </body>
 
 </html>
+
+<script>
+
+</script>
