@@ -1,0 +1,238 @@
+.header {
+    width: 970px;
+    height: 100px;
+    margin: 0 auto;
+
+    img {
+        float: left;
+        width: 189px;
+        height: 100%;
+    }
+
+    .title {
+        width: 758px;
+        float: left;
+        color: #333;
+        background: #fefff1;
+        border: 1px solid #fecd66;
+        line-height: 16px;
+        padding: 4px 6px;
+        font-size: 12px;
+        margin-top: 40px;
+        margin-left: 9px;
+
+        span {
+            color: rgb(255, 102, 0);
+        }
+    }
+
+    i {
+        float: right;
+        margin-top: 8px;
+        text-decoration: none;
+        color: #333;
+        font-size: 12px;
+    }
+}
+
+.main {
+    background: url(https://image.suning.cn/uimg/cms/img/156516498243467415.jpg) center no-repeat;
+    height: 570px;
+
+    .centent {
+        width: 970px;
+        height: 100%;
+        margin: 0 auto;
+
+        .enter {
+            position: relative;
+            width: 360px;
+            margin-top: 50px;
+            background: #fff;
+            box-shadow: 0 0 2px #ececec;
+            font-family: "Microsoft Yahei";
+            float: right;
+
+            .tab {
+                height: 50px;
+                line-height: 20px;
+                font-size: 16px;
+                overflow: hidden;
+                border-bottom: 1px solid #eee;
+
+                span {
+                    position: relative;
+                    float: left;
+                    height: 100%;
+                    width: 50%;
+                    text-decoration: none;
+                    text-align: center;
+
+                    i {
+                        display: block;
+                        border-right: 1px solid #eee;
+                        margin-top: 15px;
+                    }
+
+                    em {
+                        display: none;
+                        position: absolute;
+                        width: 70px;
+                        height: 4px;
+                        background: #f60;
+                        bottom: -1px;
+                        left: 50%;
+                        margin-left: -35px;
+                    }
+
+
+                }
+
+                .span-cur {
+                    i {
+                        color: #f60
+                    }
+
+                    em {
+                        display: block;
+                    }
+                }
+            }
+
+            .user {
+                padding: 0 24px;
+                display: none;
+
+                .phone {
+                    margin-bottom: 20px;
+
+
+                    .phone-inp {
+                        height: 36px;
+                        width: 100%;
+                        border: 1px solid #ddd;
+                        line-height: 36px;
+
+                        label {
+                            padding: 0 5px;
+                            color: #999;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+
+                .hint {
+                    padding: 2px 10px;
+                    font-size: 12px;
+                    color: #323232;
+                    background: #fff0f0;
+                    border: 1px solid #ff3c3c;
+                    margin: 8px 0;
+                    font-size: 12px;
+                    height: 16px;
+                    display: none;
+                }
+
+                .hint-cur {
+                    display: block;
+                }
+
+                .whitebox {
+                    height: 38px;
+                    // display: none;
+                }
+
+                .whitebox-cur {
+                    display: none;
+                }
+            }
+
+            .user-cur {
+                display: block;
+            }
+        }
+    }
+}
+
+.help {
+    padding-top: 10px;
+    line-height: 35px;
+    height: 35px;
+
+    .help-left {
+        float: left;
+        color: #333;
+        font-size: 12px;
+
+        i {
+            width: 13px;
+            height: 16px;
+            display: inline-block;
+            font-size: 12px;
+        }
+    }
+
+    .help-right {
+        float: right;
+        color: #333;
+        font-size: 12px;
+    }
+}
+
+.tijiao {
+    display: block;
+    width: 310px;
+    line-height: 40px;
+    margin: 0 auto;
+    background: #f60;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.gift {
+    text-align: center;
+    margin: 12px 0 35px;
+    color: #333;
+    font-size: 12px;
+}
+
+.copy {
+    padding-top: 30px;
+    text-align: center;
+    position: relative;
+    display: none;
+
+    .sao {
+        height: 156px;
+        padding: 20px 34px 0;
+        position: relative;
+        margin-bottom: 17px;
+
+        img {
+            display: block;
+            width: 141px;
+            height: 141px;
+            margin: 0 auto;
+            transition: .3s all;
+            position: relative;
+        }
+    }
+
+    .app {
+        margin-bottom: 7px;
+        text-align: center;
+        font-size: 12px;
+
+        span {
+            color: #f60;
+        }
+    }
+}
+
+.copy-cur {
+    display: block;
+}

@@ -164,12 +164,13 @@ $(".enter").click(function () {
             data: `password=${_password}&phone=${ _phone}`,
             // dataType: "dataType",
             success: function (response) {
-                console.log(response.status);
+
+                alert(response.status)
                 /* 先检查请求的结果，然后做出对应的处理 */
                 if (response.status == "success") {
                     // alert(response.msg);
                     /* 跳转到登录页面 */
-                    console.log(123)
+                    alert(response.msg);
                     // window.location.href =
                     //     "http://127.0.0.1/code/day31/mycode/html/enter.html";
                 } else {
