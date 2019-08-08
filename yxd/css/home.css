@@ -2829,3 +2829,336 @@ body {
   top: 0;
   left: 0;
 }
+
+.floor-show {
+  width: 1190px;
+  margin-top: 30px;
+  margin: 20px auto 0;
+}
+
+.floor-show .title {
+  width: 100%;
+  height: 22px;
+}
+
+.floor-show .title .border {
+  float: left;
+  width: 3px;
+  height: 20px;
+  background: #fe9901;
+}
+
+.floor-show .title p {
+  float: left;
+  margin-left: 12px;
+  font: bold 18px/20px "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
+}
+
+.floor-show .content ul {
+  width: 1191px;
+  margin-top: 8px;
+  padding: 1px 0;
+  background: #EEE;
+}
+
+.floor-show .content ul li {
+  width: 237px;
+  height: 340px;
+  position: relative;
+  float: left;
+  margin: 1px 0 0 1px;
+  background: #FFF;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.floor-show .content ul li a {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.floor-show .content ul li a img {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto 0;
+  display: block;
+  transition: transform .5s;
+}
+
+.floor-show .content ul li a .title {
+  width: 193px;
+  height: 40px;
+  margin: 15px auto 5px;
+  overflow: hidden;
+  font: 12px/20px "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
+  word-break: break-all;
+  color: #333;
+}
+
+.floor-show .content ul li a .title .zy {
+  float: left;
+  width: 35px;
+  height: 18px;
+  margin: 2px 5px 0 0;
+  background: url(../images/index.png) -561px -270px;
+}
+
+.floor-show .content ul li a .price {
+  margin-left: 20px;
+  color: #F60;
+  font: bold 16px/18px "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
+}
+
+.floor-show .content ul li a .price i {
+  font-size: 10px;
+}
+
+.floor-show .content ul li a .label {
+  width: 200px;
+  position: relative;
+  height: 16px;
+  margin: 7px auto 0;
+  overflow: hidden;
+}
+
+.floor-show .content ul li a .label span {
+  position: relative;
+  zoom: 1;
+  display: block;
+  float: left;
+  padding: 0 2px;
+  height: 16px;
+  color: #FFF;
+  font: 12px/16px "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
+  background: #F40;
+  margin-right: 10px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.floor-show .content ul li .fot-label {
+  top: 278px;
+  position: absolute;
+  right: 22px;
+}
+
+.floor-show .content ul li .fot-label span {
+  float: left;
+  width: 44px;
+  height: 20px;
+  border: 1px solid #FF6600;
+  border-radius: 4px;
+  text-align: center;
+  color: #F60;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.floor-show .content .end {
+  position: relative;
+  width: 112px;
+  height: 22px;
+  text-align: center;
+  color: #CCC;
+  margin: 15px auto;
+  font: 18px/22px "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
+}
+
+.floor-show .content .end .line-left {
+  left: -97px;
+  position: absolute;
+  top: 11px;
+  width: 97px;
+  height: 1px;
+  background: #CCC;
+}
+
+.floor-show .content .end .line-right {
+  right: -97px;
+  position: absolute;
+  top: 11px;
+  width: 97px;
+  height: 1px;
+  background: #CCC;
+}
+
+.guide {
+  width: 100%;
+  background: #f5f5f5;
+  border-top: 1px solid #e7e7e7;
+}
+
+.guide .content {
+  width: 1190px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.guide .content .head {
+  width: 1250px;
+  padding: 12px 0;
+  height: 73px;
+  border-bottom: 1px solid #eaeaea;
+  background: none;
+}
+
+.guide .content .head dl {
+  width: 250px;
+  float: left;
+  overflow: hidden;
+}
+
+.guide .content .head dl dt {
+  float: left;
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+}
+
+.guide .content .head dl dt img {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.guide .content .head dl dd {
+  width: 180px;
+  float: left;
+  height: 48px;
+}
+
+.guide .content .head dl dd h5 {
+  line-height: 24px;
+  width: 100%;
+  font-weight: 700;
+  color: #222;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.guide .content .head dl dd p {
+  font-size: 12px;
+  line-height: 24px;
+  width: 100%;
+  color: #545454;
+}
+
+.guide .content .foot {
+  width: 1050px;
+  float: left;
+  height: 180px;
+}
+
+.guide .content .foot dl {
+  width: 210px;
+  float: left;
+  height: 160px;
+}
+
+.guide .content .foot dl dt {
+  width: 100%;
+  line-height: 40px;
+  font-weight: 700;
+  color: #545454;
+  height: 35px;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.guide .content .foot dl dd {
+  width: 100%;
+  line-height: 22px;
+  color: #545454;
+  font-size: 12px;
+}
+
+.guide .content .fot-right {
+  float: left;
+  height: 180px;
+  width: 90px;
+}
+
+.guide .content .fot-right p {
+  width: 100%;
+  line-height: 40px;
+  font-weight: 700;
+  color: #545454;
+  height: 35px;
+  font-size: 14px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.guide .content .fot-right span {
+  color: #333;
+  font-size: 12px;
+}
+
+.footer {
+  background: #FFF;
+  width: 100%;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.footer .content {
+  width: 1190px;
+  height: 185px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer .content .list {
+  line-height: 25px;
+  height: 25px;
+}
+
+.footer .content .list a {
+  color: #666;
+  font-size: 12px;
+}
+
+.footer .content .list span {
+  color: #888;
+  padding: 0 8px;
+  font-size: 12px;
+}
+
+.footer .content .copy {
+  width: 1190px;
+  float: left;
+  margin-top: 0;
+  line-height: 25px;
+  height: 25px;
+}
+
+.footer .content .copy a {
+  color: #999;
+  font-size: 12px;
+}
+
+.footer .content .copy span {
+  color: #888;
+  padding: 0 8px;
+  font-size: 12px;
+}
+
+.footer .content .logo {
+  width: 1190px;
+  float: left;
+  height: 25px;
+  margin-top: 5px;
+}
+
+.footer .content .logo img {
+  display: inline-block;
+  margin-right: 8px;
+  height: 24px;
+  width: 65px;
+}

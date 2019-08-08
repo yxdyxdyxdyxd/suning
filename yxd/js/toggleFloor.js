@@ -19,5 +19,5 @@ f4.init();
 let f5 = new Floor(Flobj[4])
 f5.init();
 
-let f6 = new Floor(Flobj[5])
-f6.init();
+// let f6 = new Floor(Flobj[5])
+// f6.init();

@@ -66,13 +66,13 @@
         console.log(obj)
 
         var obj = [];
-        $(".rec-content").find("li").each((i, ele) => {
+        $(".ng-authentication").find("img").each((i, ele) => {
             var o = {};
-            o.src = $(ele).find(".lazy-loading")[0].src;
-            o.text = $(ele).find(".title").html();
-            o.price = $(ele).find(".price").html();
-            o.icon = $(ele).find(".cxIcon").html();
-            obj.push(o)
+
+            // o.title = $(ele).find("dt").html();
+            // o.text = $(ele).find("dd").find("a").html();
+
+            obj.push($(ele)[0].src)
         })
         console.log(obj)
     </script>

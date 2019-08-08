@@ -1,0 +1,151 @@
+body {
+    background: #f8f8f8;
+}
+
+.header {
+    width: 990px;
+    height: 88px;
+    margin: 0 auto;
+
+    .ok {
+        float: right;
+        margin-top: 63px;
+        color: #333;
+        font-size: 12px;
+    }
+
+    .logo {
+        float: left;
+        width: 190px;
+        height: 100%;
+        margin-right: 24px;
+        // background: url(../images/logo.png) no-repeat;
+    }
+
+    .logo-text {
+        float: left;
+        font-size: 18px;
+        color: #666;
+        line-height: 88px;
+    }
+}
+
+.main {
+    width: 990px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-top: 3px solid #f90;
+    background: #fff;
+    padding: 55px 0;
+    line-height: 1.5;
+
+    .reg-form {
+        width: 380px;
+        margin: 0 auto;
+
+        .gift {
+            font-size: 14px;
+            line-height: 17px;
+            padding-left: 2px;
+            margin-bottom: 17px;
+
+            i {
+                color: #f40;
+            }
+        }
+
+        .phone {
+
+
+            .phone-inp {
+                width: 378px;
+                height: 38px;
+                border: 1px solid #ccc;
+                line-height: 38px;
+                margin-bottom: 25px;
+                position: relative;
+
+                label {
+                    position: absolute;
+                    width: 76px;
+                    padding-left: 11px;
+                    font-size: 12px;
+                }
+
+                input {
+                    width: 291px;
+                    height: 100%;
+                    position: absolute;
+                    left: 87px;
+                    font-size: 12px;
+                    color: #333;
+                }
+
+
+            }
+
+            .error {
+                border: 1px solid red;
+            }
+
+            .hint {
+                height: 22px;
+                line-height: 22px;
+                margin: -25px 0 3px;
+                color: red;
+                display: blcok;
+                font-size: 12px;
+            }
+
+            // .hint-cur {
+            //     display: block;
+            // }
+
+            .msg {
+                input {
+                    width: 142px;
+                }
+
+                .send-msg {
+                    position: absolute;
+                    left: 229px;
+                    width: 148px;
+                    height: 99%;
+                    border-left: 1px solid #bbb;
+                    font-size: 14px;
+                    margin: -1px -1px 0 0;
+                    text-align: center;
+                    background: #f5f5f5;
+                    line-height: 38px;
+                    cursor: pointer;
+                    top: 1px;
+                }
+            }
+        }
+
+        .enter {
+            width: 100%;
+            line-height: 40px;
+            background: #f60;
+            font-size: 20px;
+            color: #fff;
+            margin: 40px 0 5px;
+            text-align: center;
+        }
+
+        .select {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+
+            label {
+                display: inline-block;
+                font-size: 12px;
+                line-height: 12px;
+                color: #666;
+            }
+        }
+    }
+
+
+}
