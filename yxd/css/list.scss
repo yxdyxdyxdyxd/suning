@@ -1,0 +1,307 @@
+body {
+    background: #fff;
+}
+
+.screen {
+    position: relative;
+    height: 38px;
+
+
+    .content {
+        margin: 0 auto;
+        width: 1190px;
+
+        .sort {
+            float: left;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            padding: 0 5px 0 0;
+
+            span {
+                position: relative;
+                float: left;
+                cursor: pointer;
+                height: 16px;
+                line-height: 16px;
+                padding: 11px 0;
+                font-size: 12px;
+
+                em {
+                    padding: 0 20px;
+                }
+
+                b {
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    height: 3px;
+                    background: #F60;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.home {
+    width: 100%;
+
+    margin: 10px 0;
+
+    .content {
+
+        width: 1190px;
+        margin: 0 auto;
+        font-size: 14px;
+        min-height: 24px;
+        border-bottom: 1px dotted #eee;
+
+        span {
+            float: left;
+            line-height: 24px;
+            color: #666;
+            margin: 0 5px;
+
+
+        }
+
+        i {
+            float: left;
+            line-height: 24px;
+            color: #666
+        }
+    }
+}
+
+.phonelist {
+    width: 100%;
+
+    .content {
+        width: 1190px;
+        margin: 0 auto;
+
+        ul {
+            li {
+                width: 230px;
+                height: 502px;
+                margin: 18px 8px 0px 0px;
+                position: relative;
+                float: left;
+                box-sizing: border-box;
+            }
+
+            .bigimg {
+                width: 100%;
+                height: 240px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .smallimg {
+                width: 100%;
+                height: 32px;
+
+                dd {
+                    width: 30px;
+                    height: 30px;
+                    margin-left: 5px;
+                    float: left;
+                    overflow: hidden;
+                    box-sizing: border-box;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .dd-cur {
+                    border: 1px solid #FA0;
+                }
+            }
+
+            .info {
+                .price {
+                    height: 22px;
+                    line-height: 20px;
+                    font-size: 22px;
+                    position: relative;
+                    width: 100%;
+                    color: #F60;
+                    font-weight: bold;
+
+                    margin: 12px 0 0 0;
+                    overflow: hidden;
+
+                    i {
+                        font-size: 12px;
+                        font-family: arial;
+                        margin-right: 3px;
+                        font-weight: normal;
+                    }
+                }
+
+                .title {
+                    width: 100%;
+                    height: 40px;
+                    overflow: hidden;
+                    line-height: 20px;
+                    vertical-align: top;
+                    font-size: 12px;
+                    margin: 8px 0;
+                    word-break: break-all;
+                    color: #333;
+                }
+
+                .para {
+                    height: 14px;
+                    color: #999;
+                    margin: 0 0 6px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    line-height: 14px;
+                    font-size: 12px;
+
+                    i {
+                        display: inline-block;
+                        width: 1px;
+                        height: 10px;
+                        line-height: 10px;
+                        text-indent: 10px;
+                        overflow: hidden;
+                        margin: 0 5px;
+                        border-left: 1px dotted #999;
+                    }
+                }
+
+                .store {
+                    height: 18px;
+                    margin: 8px 0 0 0;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+
+                    span {
+                        color: #F60;
+                        float: left;
+                        margin: 0 5px 0 0;
+                        height: 12px;
+                        line-height: 12px;
+                        font-size: 12px;
+                        padding: 2px 4px;
+                        border: 1px solid #F60;
+                        border-radius: 2px;
+                        cursor: default;
+                    }
+                }
+
+                .label {
+                    display: block;
+                    position: relative;
+                    height: 18px;
+                    margin: 8px 0 0 0;
+                    overflow: hidden;
+
+                    span {
+
+                        display: inline-block;
+                        height: 12px;
+                        line-height: 12px;
+                        margin: 0 3px 0 0;
+                        padding: 3px 4px;
+                        font-size: 12px;
+                        color: #FFF;
+                        border-radius: 2px;
+                        background: #F60;
+                        float: left;
+                        max-width: 210px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+
+                .car {
+                    height: 28px;
+                    text-align: center;
+                    line-height: 28px;
+                    margin: 10px 0 0 0;
+                    border: 1px solid #EEE;
+                    overflow: hidden;
+                    border-radius: 2px;
+                    color: #333;
+
+                    span {
+                        width: 72px;
+                        font-size: 12px;
+                        float: left;
+                        height: 12px;
+                        line-height: 12px;
+                        padding: 8px 0;
+                        text-align: center;
+                        border-left: 1px solid #EEE;
+
+                        // margin-left: -1px;
+                        i {
+                            color: #333;
+                        }
+                    }
+
+                    .btcar {
+                        width: 79px;
+                    }
+                }
+            }
+        }
+
+        .li-cur {
+            box-shadow: 0 0 4px 1px rgba(210, 210, 214, 0.5);
+            border: 1px solid #DDD;
+            border-radius: 2px;
+        }
+
+        .pager {
+            text-align: center;
+
+            span {
+                display: inline-block;
+                width: 180px;
+                height: 38px;
+                text-align: center;
+                line-height: 38px;
+                border: 1px dotted #DDD;
+                background: #F8F8FA;
+                border-radius: 20px 20px 0;
+                font-size: 14px;
+                margin-right: 30px;
+            }
+
+            a {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                background-color: #F8F8FA;
+                text-decoration: none;
+                border-radius: 2px;
+                font-size: 14px;
+                margin-right: 10px;
+                color: #666;
+            }
+
+            .a-cur {
+                background-color: #6a6a6f;
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+    }
+}

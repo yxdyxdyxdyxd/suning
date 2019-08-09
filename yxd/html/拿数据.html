@@ -75,11 +75,50 @@
             obj.push($(ele)[0].src)
         })
         console.log(obj)
+
+
+        var arr = [];
+
+        $(".product-list").find("li").each((i, ele) => {
+            var arr1 = [];
+            var arr2 = [];
+            var o = {};
+            o.bigsrc = $(ele).find(".img-block").find("img")[0].src;
+            $(ele).find(".focus-box").find("img").each((index, item) => {
+                arr1.push($(item)[0].src)
+            })
+            o.smallsrc = arr1;
+            o.price = parseInt(Math.random() * 4000) + 1000
+            o.title = $(ele).find(".title-selling-point").find("a").html().slice(0, 50);
+            o.info = $(ele).find(".info-config").find("em").html();
+            $(ele).find(".sales-label").find("i").each((index, item) => {
+                arr2.push($(item).html())
+            })
+            o.label = arr2;
+            arr.push(o)
+        })
+        console.log(JSON.stringify(arr))
     </script>
 </body>
 
 </html>
 
 <script>
+    let o = {
+        bigsrc: "https://imgservice1.suning.cn/uimg1/b2c/atmosphere/VYLe8dzIgHUI9gJBLj868A.jpg_400w_400h_4e",
+        smallsrc: ["https://imgservice1.suning.cn/uimg1/b2c/image/K6Oh74Gck4N7CXqNFQjBfQ.jpg_400w_400h_4e",
+            "https://imgservice1.suning.cn/uimg1/b2c/image/yGAhV0i8aQJtF4TlX_mDLQ.jpg_400w_400h_4e",
+            "https://imgservice1.suning.cn/uimg1/b2c/image/PfCONiZoG8zwoh68MjXlOQ.jpg_400w_400h_4e"
+        ],
+        price: "\n<i>¥</i>2799<i>.00</i>",
+        title: "华为/HUAWEI nova 5 8GB+128GB 亮黑色 移动联通电信4G拍照全网通手机\n<em style=\"display:none\">麒麟810芯片！3200万人像超级夜景！40W超级快充</em>\n",
+        info: " 128GB <i>|</i>8GB <i>|</i>6.39英寸",
+        label: ["新品", "大聚惠", "赠品", "购买可送赠品"]
+    }
 
+    // var arr = [];
+    // var i = arr.map((ele) => {
+    //     return ele
+    // }).join("")
+    // console.log(i)
 </script>

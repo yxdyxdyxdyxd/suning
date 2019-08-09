@@ -1,0 +1,377 @@
+.head {
+    width: 100%;
+    height: 150px;
+    background: url(../images/deta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.nav {
+    background: #000;
+    opacity: .7;
+    margin-bottom: 30px;
+
+    ul {
+        width: 1200px;
+        margin: 0 auto;
+
+        li {
+            float: left;
+            font-size: 14px;
+            color: #fff;
+            padding: 7px 17px;
+            line-height: 16px;
+            border-right: 1px solid #5c5c5c;
+            cursor: pointer;
+        }
+    }
+}
+
+.shop-detail {
+    .cont {
+        width: 1200px;
+        margin: 0 auto;
+
+        .shop-right {
+            width: 1058px;
+            float: left;
+
+            .show-img {
+                width: 400px;
+                overflow: hidden;
+                float: left;
+
+                .big-img {
+                    width: 400px;
+                    height: 600px;
+                    overflow: hidden;
+                    background: red;
+
+                    img {
+                        width: 100%;
+                        height: 100%
+                    }
+                }
+
+                .small-img {
+                    // height: 59px;
+                    margin-top: 10px;
+                    padding: 0 25px;
+
+                    ul {
+                        li {
+                            height: 60px;
+                            width: 60px;
+                            float: left;
+                            // background: yellow;
+                            margin-right: 10px;
+
+                            img {
+                                width: 100%;
+                                height: 100%
+                            }
+                        }
+                    }
+                }
+            }
+
+            .shop-text {
+                padding: 0 90px 25px 431px;
+                // background: pink;
+
+
+                h2 {
+                    font-size: 24px;
+                    line-height: 25px;
+                    color: #333;
+                    margin-bottom: 20px;
+                }
+
+                .shop-price {
+                    width: 540px;
+                    border-bottom: 1px solid #f3f3f3;
+                    border-top: 1px solid #f3f3f3;
+                    background: #f6f6f6;
+
+                    .del-price {
+                        height: 32px;
+                        padding-left: 10px;
+                        font-size: 12px;
+                        color: #999;
+                        line-height: 32px;
+
+                        .price-right {
+                            float: right;
+                            margin-right: 10px;
+
+                            .appraise {
+                                margin-right: 10px;
+                            }
+
+                            .num-color {
+                                color: #000
+                            }
+                        }
+
+                    }
+
+                    .now-num {
+                        color: #ef2f23;
+                        font-size: 24px;
+                        font-weight: 700;
+
+                    }
+
+                    .del-num {
+                        padding-left: 14px;
+                    }
+
+
+                    .more-sale {
+                        float: right;
+                        margin-right: 10px;
+
+                    }
+                }
+
+                .service {
+                    margin-top: 15px;
+                    padding-left: 10px;
+                    padding-bottom: 15px;
+                    color: rgb(153, 153, 153);
+                    font-size: 12px;
+
+
+                    .call-service {
+                        width: 85px;
+                        height: 24px;
+                        display: inline-block;
+                        padding-left: 60px;
+                        background: url(../images/lianxgif.gif) 50% no-repeat;
+                    }
+                }
+
+                .col-color {
+                    position: relative;
+                    padding-left: 10px;
+                    padding-bottom: 15px;
+
+                    span {
+                        color: rgb(153, 153, 153);
+                        position: absolute;
+                        font-size: 12px;
+                    }
+
+                    ul {
+                        padding-left: 60px;
+                        max-height: 110px;
+                        overflow-y: auto;
+
+                        li {
+                            margin: 0 15px 5px 0;
+                            float: left;
+                            border: 1px solid #ddd;
+                            cursor: pointer;
+                            width: 45px;
+                            height: 45px;
+
+                            img {
+                                width: 100%;
+                                height: 100%
+                            }
+                        }
+                    }
+
+
+                }
+
+                .col-size {
+                    position: relative;
+                    padding-left: 10px;
+                    padding-bottom: 15px;
+
+                    span {
+                        color: rgb(153, 153, 153);
+                        position: absolute;
+                        font-size: 12px;
+                    }
+
+                    ul {
+                        padding-left: 60px;
+                        max-height: 110px;
+                        overflow-y: auto;
+
+                        li {
+                            cursor: pointer;
+                            float: left;
+                            padding: 0 10px;
+                            font-weight: 700;
+                            line-height: 28px;
+                            border: 1px solid #ddd;
+                            white-space: nowrap;
+                            word-wrap: normal;
+                            margin: 0 10px 5px 0;
+                        }
+                    }
+
+                }
+
+                .col-num {
+                    position: relative;
+                    padding-left: 10px;
+                    padding-bottom: 15px;
+
+
+
+
+
+                    .col-num-text {
+                        color: rgb(153, 153, 153);
+                        position: absolute;
+                        font-size: 12px;
+                    }
+
+                    .col-btn {
+                        margin-left: 60px;
+
+                        overflow-y: auto;
+                        border: 1px solid #ddd;
+                        position: relative;
+                        width: 95px;
+                        height: 25px;
+                        zoom: 1;
+
+                        span {
+                            float: left;
+                            width: 24px;
+                            height: 25px;
+                            display: inline-block;
+                            cursor: pointer;
+                            text-align: center;
+                        }
+
+                        input {
+                            width: 44px;
+                            text-align: center;
+                            color: #000;
+                            font-size: 14px;
+                            border: 0;
+                            height: 25px;
+                            border-left: 1px solid #ddd;
+                            border-right: 1px solid #ddd;
+                            float: left;
+                            background: none;
+                        }
+                    }
+                }
+
+                .buy {
+                    padding: 5px 0 20px 60px;
+
+                    .now-buy {
+                        display: inline-block;
+                        width: 200px;
+                        height: 50px;
+                        line-height: 50px;
+                        background: rgb(239, 47, 35);
+                        text-align: center;
+                        color: rgb(255, 255, 255);
+                        cursor: pointer;
+                    }
+
+                    .car-buy {
+                        display: inline-block;
+                        width: 200px;
+                        height: 50px;
+                        line-height: 50px;
+                        // background: rgb(239, 47, 35);
+                        text-align: center;
+                        color: rgb(51, 51, 51);
+                        border-width: 1px;
+                        border-style: solid;
+                        border-color: rgb(221, 221, 221);
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+
+        .shop-left {
+            float: left;
+            width: 120px;
+
+            border-left: 1px solid rgb(238, 238, 238);
+            padding-left: 20px;
+
+            .title {
+                color: rgb(102, 102, 102);
+                height: 14px;
+                line-height: 14px;
+                margin-bottom: 10px;
+                display: inline-block;
+                width: 100%;
+                position: relative;
+                text-align: center;
+
+                s {
+                    position: absolute;
+                    top: 7px;
+                    margin-left: -50%;
+                    width: 100%;
+                    height: 0px;
+                    border-top: 1px solid rgb(238, 238, 238);
+                    text-decoration: none;
+                }
+
+                span {
+                    font-size: 16px;
+                    color: rgb(153, 153, 153);
+                    text-align: center;
+                    width: 6em;
+                    top: 0px;
+                    left: 50%;
+                    margin-left: -3em;
+                    background-color: rgb(255, 255, 255);
+                    position: absolute;
+                }
+            }
+
+            .list-box {
+                li {
+                    margin-top: 11px;
+
+                    img {
+                        position: relative;
+                        display: block;
+                        background-color: rgb(245, 245, 245);
+                        width: 120px;
+                        height: 180px;
+                        overflow: hidden;
+                    }
+
+                    span {
+                        font-size: 14px;
+                        margin-top: 5px;
+                        color: rgb(51, 51, 51);
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+
+
+            }
+
+            #list-box li:first-child {
+                margin-top: 0;
+            }
+
+
+        }
+
+    }
+
+
+}
