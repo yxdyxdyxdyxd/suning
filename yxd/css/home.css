@@ -908,6 +908,7 @@ body {
 
 .banner .banner-right .banner-right-center ul {
   width: 150px;
+  position: relative;
 }
 
 .banner .banner-right .banner-right-center ul li {
@@ -1123,6 +1124,7 @@ body {
   top: 0;
   left: 2px;
   height: 122px;
+  display: none;
 }
 
 .banner .first-hc .animate-hc ul li {
@@ -1136,6 +1138,7 @@ body {
   background: #FFF url(../images/index.png) -497px -165px no-repeat;
   width: 53px;
   height: 122px;
+  display: none;
 }
 
 .banner .first-hc .animate-hc ul li .hc-lable p {

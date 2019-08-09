@@ -4,7 +4,7 @@ class Head {
     }
     init() {
         //头部广告
-        this.createAdvert();
+        // this.createAdvert();
         //头部广告开关
         this.addEventAdvert();
         //头部导航左部

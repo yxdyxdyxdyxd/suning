@@ -6,6 +6,7 @@ class Details {
         this.receive();
         this.createEle();
         this.addEvent();
+        this.addEventFdj();
     }
     receive() {
 
@@ -36,7 +37,12 @@ class Details {
             <div class="cont clearfix">
                 <div class="shop-right clearfix">
                     <div class="show-img">
-                        <div class="big-img"><img  src="${this.queryObj.bigsrc}" alt=""></div>
+                  
+                        <div class="big-img"><img  src="${this.queryObj.bigsrc}" alt="">
+                        <div class="xiangqing"></div>
+                        <div id="fd"><img  src="${this.queryObj.bigsrc}" alt=""></div>
+                        </div>
+                       
                         <div class="small-img">
                             <ul class="clearfix">
                          
@@ -150,6 +156,22 @@ class Details {
             $("input[type='text']").val(num)
         })
 
+    }
+    //放大镜
+    addEventFdj() {
+        $(".big-img").mousemove(function (e) {
+            var left = e.clientX;
+            var top = e.clientY;
+            // console.log(left, top)
+            $("#fd").find("img").css({
+                "left": left * (-3) + 'px',
+                "top": top * (-3) + 'px'
+            })
+            $(".xiangqing").css({
+                "left": top + 'px',
+                "top": top + 'px'
+            })
+        })
     }
 
 

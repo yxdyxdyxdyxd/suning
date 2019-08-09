@@ -7,6 +7,8 @@ class List {
         this.createList();
         //详情跳转
         this.details();
+        //购物车功能
+        // this.addEvEntCar();
     }
     //删除一些模块
     removeEle() {
@@ -23,10 +25,10 @@ class List {
     }
     //创建楼层
     createList() {
-        $(".phonelist").find("ul").find("li").remove()
-        let html = `${this.data.map((ele)=>{
+        // $(".phonelist").find("ul").find("li").remove()
+        let html = `${this.data.map((ele,i)=>{
           
-            return `  <li>
+            return `  <li data-index=${i}>
             <div class="bigimg"><img src="${ele.bigsrc}" alt="" title="麒麟810芯片"></div>
             <dl class="smallimg">
                ${JSON.parse(ele.smallsrc).map((item)=>{
@@ -54,8 +56,8 @@ class List {
 
         </li>`
         }).join("")}`
-        $(".phonelist").find("ul").append(html);
-
+        $(".phonelist").find("ul").html(html);
+        // console.log(this.data)
     }
     details() {
         var arr = [];
@@ -63,11 +65,12 @@ class List {
             arr.push(this.data[i])
         }
         let self = this;
-        $(".phonelist").on("click", "li", function () {
-            var queryStr = self.obj2QueryString(arr[$(this).index()]);
-            console.log(queryStr)
+        $(".phonelist").on("click", ".bigimg", function () {
+            // console.log($(this).index());
+            var queryStr = self.obj2QueryString(arr[$(this).parent("li").data("index")]);
+            // console.log(queryStr)
 
-            window.location.href = `http://127.0.0.1/code/suning/suning/yxd/html/detail.html?${queryStr}`
+            window.location.href = `http://127.0.0.1/code/suning/suning/yxd/html/detail2.html?${queryStr}`
         })
     }
     obj2QueryString(o) {
@@ -76,6 +79,22 @@ class List {
             queryString = queryString + "&" + `${key}=${o[key]}`;
         }
         return queryString.slice(1)
+    }
+    //添加购物车功能
+    addEvEntCar() {
+        $(".phonelist").find("ul").on("click", ".btcar", function () {
+            var index = $(this).parent().parent().parent().data("index")
+            console.log(itemData)
+            // $.ajax({
+            //     type: "get",
+            //     url: "url",
+            //     data: `id=${itemData[index].id}&price=${ itemData[index].price}`,
+            //     dataType: "dataType",
+            //     success: function (response) {
+
+            //     }
+            // });
+        })
     }
 
 }
@@ -100,7 +119,7 @@ $.ajax({
     }
 });
 
-
+let itemData;
 let getList = (page, type) => {
     $.ajax({
         type: "post",
@@ -108,6 +127,7 @@ let getList = (page, type) => {
         data: `page=${page}&type=${type}`,
         dataType: "json",
         success: function (response) {
+            itemData = response
             let list = new List(response);
             list.init()
 
@@ -138,3 +158,42 @@ $(".sort span").click(function () {
     getList(0, type);
     $(".pager").children("a").eq(0).addClass("a-cur").siblings().removeClass("a-cur");
 })
+
+//购物车功能
+$(".phonelist").find("ul").on("click", ".btcar", function () {
+    var index = $(this).parent().parent().parent().data("index")
+
+    $.ajax({
+        type: "get",
+        data: `id=${itemData[index].gid}&price=${itemData[index].price}`,
+        url: "../serve/addCar.php",
+        dataType: "json",
+        success: function (response) {
+            if (response.status == "success") {
+
+                console.log(response);
+                $(".show-car").find(".num").html(response.data.count)
+                $(".toorbal-right").find(".order").eq(4).find("span").html(`购物车 ${response.data.count}`)
+
+
+            }
+        }
+    });
+})
+//点击购物车
+$(".show-car").click(function () {
+
+    window.location.href = `http://127.0.0.1/code/suning/suning/yxd/html/car.html`
+})
+
+//一进入就
+$.ajax({
+    type: "get",
+    url: "../serve/chax.php",
+    data: "data",
+
+    success: function (num) {
+        $(".show-car").find(".num").html(num)
+        $(".toorbal-right").find(".order").eq(4).find("span").html(`购物车 ${num}`)
+    }
+});

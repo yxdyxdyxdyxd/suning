@@ -29,7 +29,7 @@ class Homelist {
             <div class="end"><span class="line-left"></span>END<span class="line-right"></span></div>
         </div>
     </div>`
-        $("body").append(html);
+        $("#homelist").append(html);
     }
 }
 $.ajax({

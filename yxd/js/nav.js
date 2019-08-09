@@ -9,6 +9,8 @@ class Nav {
         this.createBanner();
         //给导航添加滑过显示事件
         this.addEventNav();
+        //内容滚播
+        this.addscroll();
 
     }
     //创建导航标签
@@ -83,7 +85,7 @@ class Nav {
         </div>
     </div>`
 
-        $("body").append(html);
+        $("#nav").append(html);
     }
     //创建banner部分
     createBanner() {
@@ -164,7 +166,7 @@ class Nav {
         </div>
     </div>`
 
-        $("body").append(html);
+        $("#nav").append(html);
     }
     //给导航添加滑过显示事件
     addEventNav() {
@@ -204,6 +206,24 @@ class Nav {
             $(this).toggleClass("nav-index-active")
         })
         navBlist.eq(2).append(`<i class="hot"></i>`)
+
+    }
+    //内容滚播
+    addscroll() {
+        var top = 0;
+        setInterval(function () {
+            top -= 144;
+            if (top < -288) {
+                top = 0;
+            }
+            $(".banner-right-center").find("ul").animate({
+                top: top + "px"
+            }, 1000)
+        }, 5000)
+        $("a").click(function () {
+            event.preventDefault();
+            window.location.href = `http://127.0.0.1/code/suning/suning/yxd/html/list.html`
+        })
 
     }
 
@@ -744,5 +764,8 @@ let obj = {
         bigsrc: ["https://image.suning.cn/uimg/cms/img/155125782519642597.jpg", "https://image.suning.cn/uimg/cms/img/153988051973837785.jpg"]
     }]
 }
+
+// $.getJSON("../json/nav.json", (json) => (new Nav(json)).init())
 let n = new Nav(obj)
 n.init()
+// console.log(JSON.stringify(obj))

@@ -39,13 +39,14 @@
 
             .show-img {
                 width: 400px;
-                overflow: hidden;
+                // overflow: hidden;
                 float: left;
+                position: relative;
 
                 .big-img {
                     width: 400px;
                     height: 600px;
-                    overflow: hidden;
+                    // overflow: hidden;
                     background: red;
 
                     img {
@@ -373,5 +374,32 @@
 
     }
 
+
+}
+
+.xiangqing {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background: silver;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+}
+
+#fd {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 100px;
+    left: 410px;
+    z-index: 2;
+
+    img {
+        width: 1500px;
+        height: 1500px;
+        position: absolute;
+    }
 
 }

@@ -1,0 +1,82 @@
+.content {
+    width: 1190px;
+    margin: 0 auto;
+
+    thead {
+
+
+        tr {
+            height: 32px;
+
+            th {
+                width: 300px;
+                text-align: center;
+                background: #bbb
+            }
+
+        }
+    }
+
+    tbody {
+        padding: 15px 20px;
+
+        td {
+            width: 300px;
+            text-align: center;
+
+            img {
+                height: 100px;
+            }
+
+            button {
+                width: 21px;
+                height: 21px;
+            }
+
+            .btnB {
+                margin-left: -6px;
+            }
+
+            .btnA {
+                margin-right: 1px;
+            }
+
+            .num {
+                width: 50px;
+                margin-left: -6px;
+                text-align: center;
+                border: 1px solid #bbb;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.footer1 {
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    background: #ccc;
+    text-align: none;
+}
+
+.footer1 .left {
+    display: inline-block;
+    width: 182px;
+    height: 30px;
+    text-align: center;
+    /* background: #892 */
+    float: left;
+}
+
+.right {
+    /* float: right; */
+    width: 200px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* background: #195; */
+    text-align: center
+}

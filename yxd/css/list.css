@@ -86,6 +86,7 @@ body {
   position: relative;
   float: left;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .phonelist .content ul .bigimg {
@@ -292,4 +293,46 @@ body {
   background-color: #6a6a6f;
   color: #fff;
   font-weight: bold;
+}
+
+.show-car {
+  position: fixed;
+  top: 200px;
+  right: 0;
+  width: 35px;
+  height: 115px;
+  background: #333;
+  text-align: center;
+}
+
+.show-car i {
+  display: block;
+  width: 35px;
+  height: 20px;
+  background-color: #383838;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  color: #FFF;
+}
+
+.show-car .text {
+  color: #FFF;
+  display: block;
+  width: 20px;
+  margin: 0 auto;
+}
+
+.show-car .num {
+  display: inline-block;
+  min-width: 17px;
+  height: 19px;
+  padding: 0 2px;
+  background-color: #D00;
+  color: #FFF;
+  line-height: 15px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 19px;
 }

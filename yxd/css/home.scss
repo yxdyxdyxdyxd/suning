@@ -948,6 +948,7 @@ body {
 
             ul {
                 width: 150px;
+                position: relative;
 
                 li {
                     width: 150px;
@@ -1181,6 +1182,7 @@ body {
             top: 0;
             left: 2px;
             height: 122px;
+            display: none;
 
             ul {
                 li {
@@ -1194,6 +1196,7 @@ body {
                         background: #FFF url(../images/index.png) -497px -165px no-repeat;
                         width: 53px;
                         height: 122px;
+                        display: none;
 
 
                         p {

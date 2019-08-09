@@ -1,0 +1,77 @@
+.content {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.content thead tr {
+  height: 32px;
+}
+
+.content thead tr th {
+  width: 300px;
+  text-align: center;
+  background: #bbb;
+}
+
+.content tbody {
+  padding: 15px 20px;
+}
+
+.content tbody td {
+  width: 300px;
+  text-align: center;
+}
+
+.content tbody td img {
+  height: 100px;
+}
+
+.content tbody td button {
+  width: 21px;
+  height: 21px;
+}
+
+.content tbody td .btnB {
+  margin-left: -6px;
+}
+
+.content tbody td .btnA {
+  margin-right: 1px;
+}
+
+.content tbody td .num {
+  width: 50px;
+  margin-left: -6px;
+  text-align: center;
+  border: 1px solid #bbb;
+  font-size: 12px;
+}
+
+.footer1 {
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  background: #ccc;
+  text-align: none;
+}
+
+.footer1 .left {
+  display: inline-block;
+  width: 182px;
+  height: 30px;
+  text-align: center;
+  /* background: #892 */
+  float: left;
+}
+
+.right {
+  /* float: right; */
+  width: 200px;
+  height: 30px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /* background: #195; */
+  text-align: center;
+}
