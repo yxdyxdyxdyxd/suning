@@ -48,6 +48,7 @@
                     height: 600px;
                     // overflow: hidden;
                     background: red;
+                    position: relative;
 
                     img {
                         width: 100%;
@@ -385,20 +386,21 @@
     opacity: 0.5;
     top: 0;
     left: 0;
+    display: none;
 }
 
 #fd {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 600px;
     position: absolute;
     overflow: hidden;
-    top: 100px;
-    left: 410px;
+    top: 0px;
+    left: 400px;
     z-index: 2;
 
     img {
-        width: 1500px;
-        height: 1500px;
+        width: 1200px;
+        height: 1800px;
         position: absolute;
     }
 

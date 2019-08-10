@@ -1,5 +1,6 @@
 body {
     background: #fff;
+    position: relative;
 }
 
 .screen {
@@ -349,4 +350,203 @@ body {
         font-size: 12px;
         line-height: 19px;
     }
+}
+
+.car-box {
+    position: fixed;
+    width: 280px;
+    height: 100%;
+    background-color: #FFF;
+    box-shadow: 1px 0 4px #888;
+    right: 35px;
+    top: 0;
+
+    // display: flex;
+    flex-direction: column;
+    display: none;
+
+
+
+    .car-top {
+        padding: 2px 14px 8px;
+
+        .top-info {
+            height: 26px;
+            background: 0 0;
+            line-height: 26px;
+            color: #666;
+            overflow: hidden;
+
+            .all {
+                float: left;
+                width: 13px;
+                height: 13px;
+                margin: 7px 10px 0 0;
+                border: 1px solid #707070;
+            }
+
+            p {
+                font-size: 12px;
+
+                span {
+                    float: left;
+
+                    em {
+                        line-height: 26px;
+                        color: #666;
+                    }
+
+
+                }
+
+                a {
+                    float: right;
+                    margin-right: 5px;
+                    color: #666;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .car-list {
+        // height: 100%;
+        // position: fixed;
+        flex: 1;
+        border-top: 1px solid #DDD;
+        overflow-y: scroll;
+
+        .shop-list {
+            padding: 0 14px;
+
+
+            .car-item {
+                position: relative;
+                padding: 10px 8px 10px 0;
+                border-bottom: 1px solid #DDD;
+
+                .close {
+                    float: left;
+                    width: 23px;
+                    margin-top: 21px;
+
+                    .ck {
+                        width: 13px;
+                        height: 13px;
+                        border: 1px solid #707070;
+                    }
+                }
+
+                .car-img {
+                    position: relative;
+                    width: 62px;
+                    height: 62px;
+                    margin-right: 10px;
+                    overflow: hidden;
+                    float: left;
+
+                    img {
+                        display: block;
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+
+                .msg {
+                    margin-left: 10px;
+                    padding-top: 8px;
+
+                    .text {
+                        height: 24px;
+                        margin-bottom: 2px;
+                        line-height: 24px;
+                        word-break: break-all;
+                        word-wrap: break-word;
+                        overflow: hidden;
+                        color: #666;
+                        font-size: 12px;
+                    }
+
+                    .shuzi {
+                        .price {
+                            float: right;
+                            color: #333;
+                            font-weight: 400;
+                            font-size: 12px;
+
+                            em {
+                                padding-left: 2px;
+                                font-family: tahoma;
+                            }
+                        }
+
+                        .num {
+                            width: 66px;
+                            height: 18px;
+                            line-height: 18px;
+                            text-align: center;
+                            overflow: hidden;
+                            float: left;
+                            font-size: 12px;
+                        }
+
+
+                    }
+
+                    .del {
+                        border: 1px solid #333;
+                        font-size: 12px;
+                        line-height: 12px;
+                        display: block;
+                        width: 10px;
+                        height: 12px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .btn {
+        // position: fixed;
+        // position: relative;
+        width: 258px;
+        // bottom: 0;
+        padding: 0;
+        border-top: 2px solid #DDD;
+        height: 43px;
+
+        padding: 10px 10px 0 12px;
+
+        .toll {
+            float: left;
+
+            p {
+                color: #333;
+                line-height: normal;
+                font-size: 12px;
+                margin-bottom: 5px;
+
+
+            }
+        }
+
+        .js {
+            width: 115px;
+            height: 32px;
+            background-color: #F90;
+            padding-left: 10px;
+            border: 1px solid #E68A00;
+            color: #FFF;
+            text-align: left;
+            font: 14px/32px "Microsoft YaHei";
+            float: right;
+        }
+    }
+}
+
+.car-box-cur {
+    display: flex;
 }

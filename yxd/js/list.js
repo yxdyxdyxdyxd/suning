@@ -143,9 +143,9 @@ getList(0, type);
 
 $(".pager").on("click", "a", function () {
 
-    // console.log($(this).index());
+    // console.log($(this).index() - 1);
     /* 设置当前标签的选中状态 */
-    getList($(this).index(), type);
+    getList($(this).index() - 1, type);
     $(this).addClass("a-cur").siblings().removeClass("a-cur");
 })
 
@@ -181,19 +181,145 @@ $(".phonelist").find("ul").on("click", ".btcar", function () {
     });
 })
 //点击购物车
-$(".show-car").click(function () {
+$(".js").click(function () {
 
     window.location.href = `http://127.0.0.1/code/suning/suning/yxd/html/car.html`
 })
 
-//一进入就
+//一进入就显示购物车里的数量
 $.ajax({
     type: "get",
     url: "../serve/chax.php",
     data: "data",
 
     success: function (num) {
+
         $(".show-car").find(".num").html(num)
         $(".toorbal-right").find(".order").eq(4).find("span").html(`购物车 ${num}`)
+        $(".top-info").find("em").eq(0).html(num);
     }
 });
+
+//点击购物车出现内容
+$(".show-car").click(function () {
+    $(".car-box").toggleClass("car-box-cur");
+    getCarInfo();
+})
+
+function getCarInfo() {
+    $.ajax({
+        type: "get",
+        url: "../serve/getCardata.php",
+
+        dataType: "json",
+        success: function (data) {
+            targetData = data;
+            let res = data.map((ele) => {
+                return `  <div class="shop-list" data-index=${ele.id}>
+                <div class="car-item">
+                    <div class="close">
+                        <input type="checkbox" class="ck" ${ele.isActive==1?"checked":""}>
+                    </div>
+                    <div class="car-img">
+                        <a href=""><img src="${ele.bigsrc}" alt=""></a>
+                    </div>
+                    <div class="msg">
+                        <p class="text">${ele.title}</p>
+                        <div class="shuzi clearfix">
+                            <span class="price">￥<em>${ele.total}</em></span>
+                            <span class="num">${ele.num}</span>
+                        </div>
+                        <span class="del">x</span>
+                    </div>
+                </div>
+            </div>`
+            }).join("")
+            $(".car-list").html(res);
+            getTotalPrice(data);
+        }
+    });
+}
+//计算总价
+function getTotalPrice(data) {
+    var res = 0;
+    data.forEach((ele) => {
+        if (ele.isActive == 1) {
+            res += ele.total * 1;
+        }
+    })
+    $(".total").html(res.toFixed(2))
+}
+//数量
+$(".car-list").on("click", ".del", function () {
+    $.ajax({
+        type: "get",
+        url: "../serve/chax.php",
+        data: "data",
+
+        success: function (num) {
+            $(".show-car").find(".num").html(num - 1)
+            $(".toorbal-right").find(".order").eq(4).find("span").html(`购物车 ${num-1}`)
+            $(".top-info").find("em").eq(0).html(num - 1);
+        }
+    });
+})
+//点击删除商品
+$(".car-list").on("click", ".del", function () {
+    let id = $(this).parents(".shop-list").data("index")
+    $.ajax({
+        type: "get",
+        url: "../serve/delCar.php",
+        data: `id=${id}`,
+        success: function (response) {
+            getCarInfo();
+        }
+    });
+
+
+})
+
+//全选框
+$(".all").click(function () {
+    $(".ck").prop("checked", $(this).is(":checked"));
+    var isActive = $(this).is(":checked");
+    $.ajax({
+        type: "get",
+        url: "../serve/bigActive.php",
+        data: `isActive=${isActive}`,
+
+        success: function (response) {
+            getCarInfo()
+            where()
+        }
+    });
+})
+//商品选择框
+$(".car-list").on("click", ".ck", function () {
+    var id = $(this).parents(".shop-list").data("index");
+    var isActive = $(this).is(":checked");
+    $.ajax({
+        type: "get",
+        url: "../serve/updataActive.php",
+        data: `id=${id}&isActive=${isActive}`,
+
+        success: function (response) {
+
+            getCarInfo()
+            where()
+        }
+    });
+})
+//检查有多少商品被勾选中
+function where() {
+    $.ajax({
+        type: "get",
+        url: "../serve/where.php",
+
+
+        success: function (num) {
+            $(".top-info").find("em").eq(1).html(num.length)
+            $(".toll").find("em").eq(0).html(num.length)
+        }
+    });
+}
+where()

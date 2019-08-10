@@ -1,5 +1,6 @@
 body {
   background: #fff;
+  position: relative;
 }
 
 .screen {
@@ -335,4 +336,182 @@ body {
   text-align: center;
   font-size: 12px;
   line-height: 19px;
+}
+
+.car-box {
+  position: fixed;
+  width: 280px;
+  height: 100%;
+  background-color: #FFF;
+  box-shadow: 1px 0 4px #888;
+  right: 35px;
+  top: 0;
+  flex-direction: column;
+  display: none;
+}
+
+.car-box .car-top {
+  padding: 2px 14px 8px;
+}
+
+.car-box .car-top .top-info {
+  height: 26px;
+  background: 0 0;
+  line-height: 26px;
+  color: #666;
+  overflow: hidden;
+}
+
+.car-box .car-top .top-info .all {
+  float: left;
+  width: 13px;
+  height: 13px;
+  margin: 7px 10px 0 0;
+  border: 1px solid #707070;
+}
+
+.car-box .car-top .top-info p {
+  font-size: 12px;
+}
+
+.car-box .car-top .top-info p span {
+  float: left;
+}
+
+.car-box .car-top .top-info p span em {
+  line-height: 26px;
+  color: #666;
+}
+
+.car-box .car-top .top-info p a {
+  float: right;
+  margin-right: 5px;
+  color: #666;
+  text-decoration: underline;
+}
+
+.car-box .car-list {
+  flex: 1;
+  border-top: 1px solid #DDD;
+  overflow-y: scroll;
+}
+
+.car-box .car-list .shop-list {
+  padding: 0 14px;
+}
+
+.car-box .car-list .shop-list .car-item {
+  position: relative;
+  padding: 10px 8px 10px 0;
+  border-bottom: 1px solid #DDD;
+}
+
+.car-box .car-list .shop-list .car-item .close {
+  float: left;
+  width: 23px;
+  margin-top: 21px;
+}
+
+.car-box .car-list .shop-list .car-item .close .ck {
+  width: 13px;
+  height: 13px;
+  border: 1px solid #707070;
+}
+
+.car-box .car-list .shop-list .car-item .car-img {
+  position: relative;
+  width: 62px;
+  height: 62px;
+  margin-right: 10px;
+  overflow: hidden;
+  float: left;
+}
+
+.car-box .car-list .shop-list .car-item .car-img img {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+.car-box .car-list .shop-list .car-item .msg {
+  margin-left: 10px;
+  padding-top: 8px;
+}
+
+.car-box .car-list .shop-list .car-item .msg .text {
+  height: 24px;
+  margin-bottom: 2px;
+  line-height: 24px;
+  word-break: break-all;
+  word-wrap: break-word;
+  overflow: hidden;
+  color: #666;
+  font-size: 12px;
+}
+
+.car-box .car-list .shop-list .car-item .msg .shuzi .price {
+  float: right;
+  color: #333;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.car-box .car-list .shop-list .car-item .msg .shuzi .price em {
+  padding-left: 2px;
+  font-family: tahoma;
+}
+
+.car-box .car-list .shop-list .car-item .msg .shuzi .num {
+  width: 66px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  overflow: hidden;
+  float: left;
+  font-size: 12px;
+}
+
+.car-box .car-list .shop-list .car-item .msg .del {
+  border: 1px solid #333;
+  font-size: 12px;
+  line-height: 12px;
+  display: block;
+  width: 10px;
+  height: 12px;
+  text-align: center;
+}
+
+.car-box .btn {
+  width: 258px;
+  padding: 0;
+  border-top: 2px solid #DDD;
+  height: 43px;
+  padding: 10px 10px 0 12px;
+}
+
+.car-box .btn .toll {
+  float: left;
+}
+
+.car-box .btn .toll p {
+  color: #333;
+  line-height: normal;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.car-box .btn .js {
+  width: 115px;
+  height: 32px;
+  background-color: #F90;
+  padding-left: 10px;
+  border: 1px solid #E68A00;
+  color: #FFF;
+  text-align: left;
+  font: 14px/32px "Microsoft YaHei";
+  float: right;
+}
+
+.car-box-cur {
+  display: flex;
 }

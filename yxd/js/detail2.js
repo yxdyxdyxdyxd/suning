@@ -114,6 +114,7 @@ class Details {
         $(".small-img").children().children().mouseover(function () {
             let newimg = $(this).children().attr("src");
             $(".big-img").children().attr("src", newimg);
+            $("#fd").children("img").attr("src", newimg);
 
             $(this).css({
                 "border-bottom": "2px solid red"
@@ -130,6 +131,7 @@ class Details {
             })
             let newimg = $(this).children().attr("src");
             $(".big-img").children().attr("src", newimg);
+            $("#fd").children("img").attr("src", newimg);
         })
         //数量点击
         $("input[type='text']").val(1)
@@ -160,17 +162,48 @@ class Details {
     //放大镜
     addEventFdj() {
         $(".big-img").mousemove(function (e) {
-            var left = e.clientX;
-            var top = e.clientY;
-            // console.log(left, top)
+            console.log(e.clientX, e.clientY)
+
+            var left = e.pageX - ($(".big-img")[0].offsetLeft + 235);
+            var top = e.pageY - ($(".big-img")[0].offsetTop + 275);
+            console.log(left, top)
+            if (left > 250) {
+                left = 250;
+            }
+            if (left < 0) {
+                left = 0;
+            }
+            if (top > 450) {
+                top = 450;
+            }
+            if (top < 0) {
+                top = 0;
+            }
+
+            $(".xiangqing").css({
+                "left": left + 'px',
+                "top": top + 'px'
+            })
             $("#fd").find("img").css({
                 "left": left * (-3) + 'px',
                 "top": top * (-3) + 'px'
             })
-            $(".xiangqing").css({
-                "left": top + 'px',
-                "top": top + 'px'
+        })
+        $(".big-img").mouseleave(function () {
+            $("#fd").css({
+                "display": "none"
             })
+            $(".xiangqing").css({
+                "display": "none"
+            });
+        })
+        $(".big-img").mouseenter(function () {
+            $("#fd").css({
+                "display": "block"
+            });
+            $(".xiangqing").css({
+                "display": "block"
+            });
         })
     }
 
