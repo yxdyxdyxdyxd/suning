@@ -17,6 +17,8 @@ class Head {
         this.createLogo();
         //登入跳转
         this.ClickTo();
+        //是否登入
+        this.isEnter();
     }
     createEle() {}
     //创建头部广告
@@ -219,6 +221,7 @@ class Head {
         $(".toorbal").find(".toorbal-right").find(".order").eq(0).find("a").eq(1).click(function () {
             event.preventDefault();
             window.location.href = `http://127.0.0.1/code/suning/suning/yxd/html/register.html`
+            Cookie.clear();
         })
         //跳转购物车
         $(".toorbal").find(".toorbal-right").find(".order").eq(4).click(function () {
@@ -226,6 +229,13 @@ class Head {
             window.location.href = `http://127.0.0.1/code/suning/suning/yxd/html/car.html`
         })
 
+    }
+    //检查用户是否登入
+    isEnter() {
+        if (Cookie.hasItem("phone") && Cookie.hasItem("password")) {
+            $(".toorbal-right").find(".order").eq(0).find("a").eq(0).html(Cookie.getItem("phone"));
+            $(".toorbal-right").find(".order").eq(0).find("a").eq(1).html("退出")
+        }
     }
 
 

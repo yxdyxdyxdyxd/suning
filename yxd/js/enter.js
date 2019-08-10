@@ -14,38 +14,75 @@ $(".tab").find("span").click(function () {
         $(".user").addClass("user-cur")
     }
 })
+// -----------------------------------------
+let queryString = "";
+if (Cookie.hasItem("phone") && Cookie.hasItem("password")) {
+    let phone = Cookie.getItem("phone");
+    let password = Cookie.getItem("password");
+    let o = {
+        phone,
+        password
+    };
+    queryString = $.param(o);
+    network(queryString)
+
+}
+// else {
+//     $(".tijiao").click(function () {
+//         let usm = $(".phone-inp").eq(0).find("input").val();
+//         let pwd = $(".phone-inp").eq(1).find("input").val();
+//         if ($("#checkbox").is(":checked")) {
+//             Cookie.setItem("phone", usm);
+//             Cookie.setItem("password", pwd);
+//         }
+//         queryString = `phone=${usm}&password=${pwd}`;
+//         network(queryString)
+//     })
+// }
 
 
+// ------------------------------------------
 
-
-
-let phone = "";
-let password = "";
 $(".tijiao").click(function () {
-    phone = $(".phone-inp").eq(0).find("input").val();
-    password = $(".phone-inp").eq(1).find("input").val();
-    if (phone.length == 0) {
+    let phone = "";
+    let password = "";
+    let obj = {}
+    obj.phone = $(".phone-inp").eq(0).find("input").val();
+    obj.password = $(".phone-inp").eq(1).find("input").val();
+    if (obj.phone.length == 0) {
         $(".hint").html("请输入用户名/邮箱/手机号")
         $(".hint").addClass("hint-cur");
         $(".whitebox").addClass("whitebox-cur")
     }
-    if (password.length == 0) {
+    if (obj.password.length == 0) {
         $(".hint").html("请输入正确的登入密码")
         $(".hint").addClass("hint-cur");
         $(".whitebox").addClass("whitebox-cur")
     }
+    if ($("#checkbox").is(":checked")) {
+        Cookie.setItem("phone", obj.phone);
+        Cookie.setItem("password", obj.password);
+    }
+    queryString = $.param(obj);
+    network(queryString);
+})
+
+
+function network(queryString) {
     $.ajax({
         type: "post",
         url: "../serve/getregister.php",
         dataType: "json",
-        data: `phone=${phone}&password=${password}`,
+        data: queryString,
         success: function (res) {
             alert(res)
             if (res == "恭喜你，登录成功！") {
                 window.location.href =
                     "../html/home.html";
+            } else {
+                Cookie.clear();
             }
         }
 
     })
-})
+}
